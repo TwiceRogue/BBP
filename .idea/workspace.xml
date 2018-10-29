@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac36ec6b-39e6-4847-8151-e4829f28b5ef" name="Default" comment="" />
+    <ignored path="BBP.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BBP$deReduction.coverage" NAME="deReduction Coverage Results" MODIFIED="1527217944735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/BBP$manage.coverage" NAME="manage Coverage Results" MODIFIED="1528694566155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1035250733">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="1" />
+          <entry key="js" value="4" />
+          <entry key="py" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="347" />
+          <entry key="html" value="102" />
+          <entry key="js" value="5410" />
+          <entry key="py" value="2833" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="102" />
+          <entry key="JavaScript" value="5410" />
+          <entry key="Python" value="3180" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BBP">
+      <favorite_root url="file://$PROJECT_DIR$/templates" module="BBP" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/templates/bbpIndex.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbpApp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="250" column="27" lean-forward="true" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
+              <folding>
+                <element signature="e#6323#8961#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/bbp/attr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1304">
+              <caret line="971" column="9" lean-forward="false" selection-start-line="971" selection-start-column="9" selection-end-line="971" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!block;n#drawAttr#0" expanded="false" />
+                <element signature="n#!!block;n#drawAttrSum#0" expanded="false" />
+                <element signature="n#!!block;n#drawAki#0" expanded="false" />
+                <element signature="n#!!block;n#initOutcomeModal#0" expanded="false" />
+                <marker date="1539571862904" expanded="true" signature="187:216" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="238:249" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="290:318" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="366:395" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="521:550" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="27158:27187" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="27212:27223" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="27264:27293" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="27341:27370" ph="..." />
+                <marker date="1539571862904" expanded="true" signature="27420:27449" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbpstyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/bbpcss/bbpstyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BBP/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navBar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/bbpcss/navBar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1008">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deReduction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deReduction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="1121" column="54" lean-forward="true" selection-start-line="1121" selection-start-column="54" selection-end-line="1121" selection-end-column="54" />
+              <folding>
+                <element signature="e#43#80#0" expanded="true" />
+                <element signature="e#280#1291#0" expanded="false" />
+                <element signature="e#15135#20529#0" expanded="false" />
+                <element signature="e#20579#23343#0" expanded="false" />
+                <element signature="e#23379#28634#0" expanded="false" />
+                <element signature="e#28677#29311#0" expanded="false" />
+                <element signature="e#29378#30018#0" expanded="false" />
+                <element signature="e#30086#30722#0" expanded="false" />
+                <element signature="e#30789#31317#0" expanded="false" />
+                <element signature="e#31475#32171#0" expanded="false" />
+                <element signature="e#32291#32513#0" expanded="false" />
+                <element signature="e#32551#32615#0" expanded="false" />
+                <element signature="e#32926#33292#0" expanded="false" />
+                <element signature="e#33360#33591#0" expanded="false" />
+                <element signature="e#33660#33916#0" expanded="false" />
+                <element signature="e#33985#34322#0" expanded="false" />
+                <element signature="e#34390#34623#0" expanded="false" />
+                <element signature="e#34715#35907#0" expanded="false" />
+                <element signature="e#36158#36529#0" expanded="false" />
+                <element signature="e#38574#39685#0" expanded="false" />
+                <element signature="e#39741#39811#0" expanded="false" />
+                <element signature="e#40968#41014#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/bbp/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-56">
+              <caret line="332" column="9" lean-forward="false" selection-start-line="332" selection-start-column="9" selection-end-line="332" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!block;n#send_data#0" expanded="false" />
+                <element signature="e#3184#3211#0" expanded="false" />
+                <element signature="n#!!block;n#fetch_data_minus#0" expanded="false" />
+                <element signature="n#!!block;n#fetch_data_plus#0" expanded="false" />
+                <element signature="n#!!block;n#new_stage#0" expanded="false" />
+                <element signature="n#!!block;n#changeStageVisbility#0" expanded="false" />
+                <element signature="e#8432#8854#0" expanded="false" />
+                <element signature="e#8896#9192#0" expanded="false" />
+                <element signature="n#!!block;n#addOutcome#0" expanded="false" />
+                <element signature="e#13252#13344#0" expanded="false" />
+                <element signature="n#!!block;n#learnSvmSimPatients#0" expanded="false" />
+                <element signature="e#18914#19006#0" expanded="false" />
+                <element signature="e#19527#19799#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/bbp/table.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="3327" column="23" lean-forward="true" selection-start-line="3327" selection-start-column="23" selection-end-line="3327" selection-end-column="23" />
+              <folding>
+                <element signature="e#1018#1104#0" expanded="false" />
+                <element signature="e#5491#5531#0" expanded="false" />
+                <element signature="e#7515#7568#0" expanded="false" />
+                <element signature="e#7813#9102#0" expanded="false" />
+                <element signature="e#9522#9575#0" expanded="false" />
+                <element signature="e#10370#10810#0" expanded="false" />
+                <element signature="e#10856#13939#0" expanded="false" />
+                <element signature="e#13946#13980#0" expanded="false" />
+                <element signature="e#14697#19919#0" expanded="false" />
+                <element signature="e#19961#22794#0" expanded="false" />
+                <element signature="e#22797#22841#0" expanded="false" />
+                <element signature="e#26183#39050#0" expanded="false" />
+                <element signature="e#33402#33459#0" expanded="false" />
+                <element signature="e#35643#35677#0" expanded="false" />
+                <element signature="e#37468#37525#0" expanded="false" />
+                <element signature="e#39113#39389#0" expanded="false" />
+                <element signature="e#39447#40088#0" expanded="false" />
+                <element signature="e#40148#40388#0" expanded="false" />
+                <element signature="e#40446#40724#0" expanded="false" />
+                <element signature="e#40910#68749#0" expanded="false" />
+                <element signature="e#49335#49355#0" expanded="false" />
+                <element signature="e#69158#69200#0" expanded="false" />
+                <element signature="e#69272#96507#0" expanded="false" />
+                <element signature="e#96572#97003#0" expanded="false" />
+                <element signature="e#97170#97365#0" expanded="false" />
+                <element signature="e#97534#98052#0" expanded="false" />
+                <element signature="e#98392#99063#0" expanded="false" />
+                <element signature="e#99148#99818#0" expanded="false" />
+                <element signature="e#99955#100004#0" expanded="false" />
+                <element signature="n#!!block;n#drawTable_withTable#0" expanded="false" />
+                <element signature="e#107805#109633#0" expanded="false" />
+                <element signature="e#114540#118451#0" expanded="false" />
+                <element signature="e#118493#121121#0" expanded="false" />
+                <element signature="e#121164#124275#0" expanded="false" />
+                <element signature="e#124345#151780#0" expanded="false" />
+                <element signature="e#151872#152303#0" expanded="false" />
+                <element signature="n#!!block;n#drawStatistical#0" expanded="false" />
+                <element signature="n#!!block;n#drawTable_all#0" expanded="false" />
+                <element signature="n#!!block;n#drawTable_test#0" expanded="false" />
+                <element signature="n#!!block;n#drawTable_selected#0" expanded="false" />
+                <element signature="n#!!block;n#draw_data_summary_in_head#0" expanded="false" />
+                <element signature="n#!!block;n#CloseFilterDiv#0" expanded="false" />
+                <element signature="e#164824#166327#0" expanded="false" />
+                <element signature="e#166347#166352#0" expanded="false" />
+                <element signature="n#!!block;n#reset_patientList#0" expanded="false" />
+                <marker date="1540795964288" expanded="true" signature="16387:16398" ph="..." />
+                <marker date="1540795964288" expanded="true" signature="116091:116102" ph="..." />
+                <marker date="1540795964288" expanded="true" signature="117428:117439" ph="..." />
+                <marker date="1540795964288" expanded="true" signature="155245:155257" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radarChart_recode.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/bbp/radarChart_recode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1344">
+              <caret line="239" column="20" lean-forward="true" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
+              <folding>
+                <element signature="e#583#2166#0" expanded="false" />
+                <element signature="e#2272#2404#0" expanded="false" />
+                <element signature="e#2732#3450#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbpIndex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/bbpIndex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="97" column="114" lean-forward="true" selection-start-line="97" selection-start-column="114" selection-end-line="97" selection-end-column="114" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#button#0;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#2;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#3;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pare</find>
+      <find>similarity</find>
+      <find>Rank</find>
+      <find>row_no</find>
+      <find>vis_stage</find>
+      <find>-1</find>
+      <find>xiangsid</find>
+      <find>nav</find>
+      <find>simBtOnClicked()</find>
+      <find>allAxis</find>
+      <find>rScale</find>
+      <find>radius</find>
+      <find>maxValue</find>
+      <find>options</find>
+      <find>searchSimPatients</find>
+      <find>svg</find>
+      <find>radarInvisibleCircle</find>
+      <find>bbbbb</find>
+      <find>737373</find>
+      <find>attributeNumericalList</find>
+      <find>range</find>
+      <find>eq</find>
+      <find>attr</find>
+      <find>filter</find>
+      <find>bt</find>
+      <find>searchSimPatients()</find>
+      <find>btn</find>
+      <find>allPatientDictList_filtered</find>
+      <find>circ</find>
+      <find>sear</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BBP/views.py" />
+        <option value="$PROJECT_DIR$/static/css/bbpcss/style.css" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/static/js/bbp/pie.js" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/static/js/bbp/scatter.js" />
+        <option value="$USER_HOME$/Anaconda3/Lib/site-packages/django/http/response.py" />
+        <option value="$PROJECT_DIR$/BBP/resources/BBP_data.csv" />
+        <option value="$PROJECT_DIR$/static/js/bbp/sortArrayWithIndex.js" />
+        <option value="$PROJECT_DIR$/BBP/__init__.py" />
+        <option value="$PROJECT_DIR$/bbpApp/__init__.py" />
+        <option value="$PROJECT_DIR$/bbpApp/models.py" />
+        <option value="$PROJECT_DIR$/static/js/bbp/storyline.js" />
+        <option value="$PROJECT_DIR$/BBP/settings.py" />
+        <option value="$PROJECT_DIR$/static/js/bbp/attr.js" />
+        <option value="$PROJECT_DIR$/static/css/bbpcss/navBar.css" />
+        <option value="$PROJECT_DIR$/static/css/bbpcss/bbpstyle.css" />
+        <option value="$PROJECT_DIR$/static/js/bbp/radarChart.js" />
+        <option value="$PROJECT_DIR$/static/js/bbp/radarChart_recode.js" />
+        <option value="$PROJECT_DIR$/BBP/urls.py" />
+        <option value="$PROJECT_DIR$/bbpApp/views.py" />
+        <option value="$PROJECT_DIR$/src/deReduction.py" />
+        <option value="$PROJECT_DIR$/templates/bbpIndex.html" />
+        <option value="$PROJECT_DIR$/static/js/bbp/table.js" />
+        <option value="$PROJECT_DIR$/static/js/bbp/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="bbpApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bbpcss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bbp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BBP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BBP" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistoryKey" value="changeV&#9;null&#9;null&#10;changeVis&#9;null&#9;null&#10;50：&#9;null&#9;null&#10;csrf&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="recentsLimit" value="5" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\BBP\static\js\bbp" />
+      <recent name="E:\PycharmProjects\BBP\BBP" />
+      <recent name="E:\PycharmProjects\BBP\static" />
+      <recent name="E:\PycharmProjects\BBP\static\css" />
+      <recent name="E:\PycharmProjects\BBP\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PHILIP\BBP-10.11\BBP\static\js" />
+      <recent name="D:\PHILIP\BBP-10.11\BBP\static\js\bbp" />
+      <recent name="D:\PHILIP\BBP-10.11\BBP\static\css\images" />
+      <recent name="I:\WORK\BBP-v2\BBP\static\css" />
+      <recent name="I:\WORK\BBP-v2\BBP\static\css\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="BBP" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Apollo\Anaconda3\envs\py27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="BBP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="BBP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="BBP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="BBP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deReduction" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/deReduction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+    </configuration>
+    <configuration name="debug" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Anaconda3\envs\py27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Anaconda3\envs\py27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bbpApp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbpApp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="wsgi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Apollo\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BBP" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BBP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BBP/wsgi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django server.BBP" />
+      <item index="1" class="java.lang.String" itemvalue="Python.debug" />
+      <item index="2" class="java.lang.String" itemvalue="Python.manage" />
+      <item index="3" class="java.lang.String" itemvalue="Python.deReduction" />
+      <item index="4" class="java.lang.String" itemvalue="Python.views" />
+      <item index="5" class="java.lang.String" itemvalue="Python.wsgi" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.wsgi" />
+        <item index="1" class="java.lang.String" itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac36ec6b-39e6-4847-8151-e4829f28b5ef" name="Default" comment="" />
+      <created>1527078060427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527078060427</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/bbp/radarChart_recode.js</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54375">
+          <caret line="2175" column="0" lean-forward="true" selection-start-line="2175" selection-start-column="0" selection-end-line="2175" selection-end-column="0" />
+          <folding>
+            <element signature="e#1018#1104#0" expanded="false" />
+            <element signature="e#5491#5531#0" expanded="false" />
+            <element signature="e#7515#7568#0" expanded="false" />
+            <element signature="e#7813#9102#0" expanded="false" />
+            <element signature="e#9522#9575#0" expanded="false" />
+            <element signature="e#10370#10810#0" expanded="false" />
+            <element signature="e#10856#13939#0" expanded="false" />
+            <element signature="e#13946#13980#0" expanded="false" />
+            <element signature="e#14697#19919#0" expanded="false" />
+            <element signature="e#19961#22794#0" expanded="false" />
+            <element signature="e#22797#22841#0" expanded="false" />
+            <element signature="e#26183#39050#0" expanded="false" />
+            <element signature="e#33402#33459#0" expanded="false" />
+            <element signature="e#35643#35677#0" expanded="false" />
+            <element signature="e#37468#37525#0" expanded="false" />
+            <element signature="e#39113#39389#0" expanded="false" />
+            <element signature="e#39447#40088#0" expanded="false" />
+            <element signature="e#40148#40388#0" expanded="false" />
+            <element signature="e#40446#40724#0" expanded="false" />
+            <element signature="e#40910#68749#0" expanded="false" />
+            <element signature="e#49335#49355#0" expanded="false" />
+            <element signature="e#69158#69200#0" expanded="false" />
+            <element signature="e#69272#96507#0" expanded="false" />
+            <element signature="e#96572#97003#0" expanded="false" />
+            <element signature="e#97170#97365#0" expanded="false" />
+            <element signature="e#97534#98052#0" expanded="false" />
+            <element signature="e#98392#99063#0" expanded="false" />
+            <element signature="e#99148#99818#0" expanded="false" />
+            <element signature="e#99955#100004#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_withTable#0" expanded="false" />
+            <element signature="e#107805#109633#0" expanded="false" />
+            <element signature="e#114540#118451#0" expanded="false" />
+            <element signature="e#118493#121121#0" expanded="false" />
+            <element signature="e#121164#124275#0" expanded="false" />
+            <element signature="e#124345#151780#0" expanded="false" />
+            <element signature="e#151872#152303#0" expanded="false" />
+            <element signature="n#!!block;n#drawStatistical#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_all#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_test#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_selected#0" expanded="false" />
+            <element signature="n#!!block;n#draw_data_summary_in_head#0" expanded="false" />
+            <element signature="n#!!block;n#CloseFilterDiv#0" expanded="false" />
+            <element signature="e#164824#166327#0" expanded="false" />
+            <element signature="e#166347#166352#0" expanded="false" />
+            <element signature="n#!!block;n#reset_patientList#0" expanded="false" />
+            <marker date="1540795964288" expanded="true" signature="16387:16398" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="116091:116102" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="117428:117439" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="155245:155257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8525">
+          <caret line="341" column="30" lean-forward="false" selection-start-line="341" selection-start-column="30" selection-end-line="341" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!block;n#send_data#0" expanded="false" />
+            <element signature="e#3184#3211#0" expanded="false" />
+            <element signature="n#!!block;n#fetch_data_minus#0" expanded="false" />
+            <element signature="n#!!block;n#fetch_data_plus#0" expanded="false" />
+            <element signature="n#!!block;n#new_stage#0" expanded="false" />
+            <element signature="n#!!block;n#changeStageVisbility#0" expanded="false" />
+            <element signature="e#8432#8854#0" expanded="false" />
+            <element signature="e#8896#9192#0" expanded="false" />
+            <element signature="n#!!block;n#addOutcome#0" expanded="false" />
+            <element signature="e#13252#13344#0" expanded="false" />
+            <element signature="n#!!block;n#learnSvmSimPatients#0" expanded="false" />
+            <element signature="e#18914#19006#0" expanded="false" />
+            <element signature="e#19527#19799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bbpIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4775">
+          <caret line="191" column="22" lean-forward="true" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/storyline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="230" column="1" lean-forward="true" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deReduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6200">
+          <caret line="1040" column="89" lean-forward="true" selection-start-line="1040" selection-start-column="89" selection-end-line="1040" selection-end-column="89" />
+          <folding>
+            <element signature="e#43#80#0" expanded="true" />
+            <element signature="e#280#1291#0" expanded="false" />
+            <element signature="e#15135#20529#0" expanded="false" />
+            <element signature="e#20579#23343#0" expanded="false" />
+            <element signature="e#23379#28634#0" expanded="false" />
+            <element signature="e#28677#29311#0" expanded="false" />
+            <element signature="e#29378#30018#0" expanded="false" />
+            <element signature="e#30086#30722#0" expanded="false" />
+            <element signature="e#30789#31317#0" expanded="false" />
+            <element signature="e#31475#32171#0" expanded="false" />
+            <element signature="e#32291#32513#0" expanded="false" />
+            <element signature="e#32551#32615#0" expanded="false" />
+            <element signature="e#32926#33292#0" expanded="false" />
+            <element signature="e#33360#33591#0" expanded="false" />
+            <element signature="e#33660#33916#0" expanded="false" />
+            <element signature="e#33985#34322#0" expanded="false" />
+            <element signature="e#34390#34623#0" expanded="false" />
+            <element signature="e#34715#35907#0" expanded="false" />
+            <element signature="e#36158#36529#0" expanded="false" />
+            <element signature="e#38574#39685#0" expanded="false" />
+            <element signature="e#39741#39811#0" expanded="false" />
+            <element signature="e#40968#41014#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/core/checks/security/csrf.py" />
+    <entry file="file://$PROJECT_DIR$/BBP/resources/BBP_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/genericpath.py" />
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/scatter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/pie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/sortArrayWithIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/django/db/models/fields/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/bbpApp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2292">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/font-awesome-4.7.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530">
+          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.pyZ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbpApp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/db/models/query.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/db/models/fields/__init__.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/utils/autoreload.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/core/handlers/base.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/core/handlers/wsgi.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/contrib/staticfiles/handlers.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/wsgiref/handlers.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/core/servers/basehttp.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/SocketServer.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/threading.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/py27/Lib/site-packages/django/core/handlers/exception.py" />
+    <entry file="file://$PROJECT_DIR$/bbpApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/py27/Lib/site-packages/django/db/models/query.py" />
+    <entry file="file://E:/Anaconda3/envs/py27/Lib/site-packages/django/core/handlers/base.py" />
+    <entry file="file://E:/Anaconda3/envs/py27/Lib/site-packages/django/core/handlers/exception.py" />
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/storyline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3475">
+          <caret line="230" column="1" lean-forward="false" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/table-dragger.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.tablednd.1.0.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/datatables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6300">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBP/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/radarChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#621#1365#0" expanded="false" />
+            <element signature="e#1409#2155#0" expanded="false" />
+            <element signature="e#2743#3430#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbpApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="250" column="27" lean-forward="true" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
+          <folding>
+            <element signature="e#6323#8961#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/attr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1304">
+          <caret line="971" column="9" lean-forward="false" selection-start-line="971" selection-start-column="9" selection-end-line="971" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#drawAttr#0" expanded="false" />
+            <element signature="n#!!block;n#drawAttrSum#0" expanded="false" />
+            <element signature="n#!!block;n#drawAki#0" expanded="false" />
+            <element signature="n#!!block;n#initOutcomeModal#0" expanded="false" />
+            <marker date="1539571862904" expanded="true" signature="187:216" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="238:249" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="290:318" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="366:395" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="521:550" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="27158:27187" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="27212:27223" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="27264:27293" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="27341:27370" ph="..." />
+            <marker date="1539571862904" expanded="true" signature="27420:27449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBP/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bbpcss/bbpstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bbpcss/navBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deReduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="1121" column="54" lean-forward="true" selection-start-line="1121" selection-start-column="54" selection-end-line="1121" selection-end-column="54" />
+          <folding>
+            <element signature="e#43#80#0" expanded="true" />
+            <element signature="e#280#1291#0" expanded="false" />
+            <element signature="e#15135#20529#0" expanded="false" />
+            <element signature="e#20579#23343#0" expanded="false" />
+            <element signature="e#23379#28634#0" expanded="false" />
+            <element signature="e#28677#29311#0" expanded="false" />
+            <element signature="e#29378#30018#0" expanded="false" />
+            <element signature="e#30086#30722#0" expanded="false" />
+            <element signature="e#30789#31317#0" expanded="false" />
+            <element signature="e#31475#32171#0" expanded="false" />
+            <element signature="e#32291#32513#0" expanded="false" />
+            <element signature="e#32551#32615#0" expanded="false" />
+            <element signature="e#32926#33292#0" expanded="false" />
+            <element signature="e#33360#33591#0" expanded="false" />
+            <element signature="e#33660#33916#0" expanded="false" />
+            <element signature="e#33985#34322#0" expanded="false" />
+            <element signature="e#34390#34623#0" expanded="false" />
+            <element signature="e#34715#35907#0" expanded="false" />
+            <element signature="e#36158#36529#0" expanded="false" />
+            <element signature="e#38574#39685#0" expanded="false" />
+            <element signature="e#39741#39811#0" expanded="false" />
+            <element signature="e#40968#41014#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="3327" column="23" lean-forward="true" selection-start-line="3327" selection-start-column="23" selection-end-line="3327" selection-end-column="23" />
+          <folding>
+            <element signature="e#1018#1104#0" expanded="false" />
+            <element signature="e#5491#5531#0" expanded="false" />
+            <element signature="e#7515#7568#0" expanded="false" />
+            <element signature="e#7813#9102#0" expanded="false" />
+            <element signature="e#9522#9575#0" expanded="false" />
+            <element signature="e#10370#10810#0" expanded="false" />
+            <element signature="e#10856#13939#0" expanded="false" />
+            <element signature="e#13946#13980#0" expanded="false" />
+            <element signature="e#14697#19919#0" expanded="false" />
+            <element signature="e#19961#22794#0" expanded="false" />
+            <element signature="e#22797#22841#0" expanded="false" />
+            <element signature="e#26183#39050#0" expanded="false" />
+            <element signature="e#33402#33459#0" expanded="false" />
+            <element signature="e#35643#35677#0" expanded="false" />
+            <element signature="e#37468#37525#0" expanded="false" />
+            <element signature="e#39113#39389#0" expanded="false" />
+            <element signature="e#39447#40088#0" expanded="false" />
+            <element signature="e#40148#40388#0" expanded="false" />
+            <element signature="e#40446#40724#0" expanded="false" />
+            <element signature="e#40910#68749#0" expanded="false" />
+            <element signature="e#49335#49355#0" expanded="false" />
+            <element signature="e#69158#69200#0" expanded="false" />
+            <element signature="e#69272#96507#0" expanded="false" />
+            <element signature="e#96572#97003#0" expanded="false" />
+            <element signature="e#97170#97365#0" expanded="false" />
+            <element signature="e#97534#98052#0" expanded="false" />
+            <element signature="e#98392#99063#0" expanded="false" />
+            <element signature="e#99148#99818#0" expanded="false" />
+            <element signature="e#99955#100004#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_withTable#0" expanded="false" />
+            <element signature="e#107805#109633#0" expanded="false" />
+            <element signature="e#114540#118451#0" expanded="false" />
+            <element signature="e#118493#121121#0" expanded="false" />
+            <element signature="e#121164#124275#0" expanded="false" />
+            <element signature="e#124345#151780#0" expanded="false" />
+            <element signature="e#151872#152303#0" expanded="false" />
+            <element signature="n#!!block;n#drawStatistical#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_all#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_test#0" expanded="false" />
+            <element signature="n#!!block;n#drawTable_selected#0" expanded="false" />
+            <element signature="n#!!block;n#draw_data_summary_in_head#0" expanded="false" />
+            <element signature="n#!!block;n#CloseFilterDiv#0" expanded="false" />
+            <element signature="e#164824#166327#0" expanded="false" />
+            <element signature="e#166347#166352#0" expanded="false" />
+            <element signature="n#!!block;n#reset_patientList#0" expanded="false" />
+            <marker date="1540795964288" expanded="true" signature="16387:16398" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="116091:116102" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="117428:117439" ph="..." />
+            <marker date="1540795964288" expanded="true" signature="155245:155257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/radarChart_recode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="239" column="20" lean-forward="true" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
+          <folding>
+            <element signature="e#583#2166#0" expanded="false" />
+            <element signature="e#2272#2404#0" expanded="false" />
+            <element signature="e#2732#3450#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bbpIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="97" column="114" lean-forward="true" selection-start-line="97" selection-start-column="114" selection-end-line="97" selection-end-column="114" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#p#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bbp/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="332" column="9" lean-forward="false" selection-start-line="332" selection-start-column="9" selection-end-line="332" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#send_data#0" expanded="false" />
+            <element signature="e#3184#3211#0" expanded="false" />
+            <element signature="n#!!block;n#fetch_data_minus#0" expanded="false" />
+            <element signature="n#!!block;n#fetch_data_plus#0" expanded="false" />
+            <element signature="n#!!block;n#new_stage#0" expanded="false" />
+            <element signature="n#!!block;n#changeStageVisbility#0" expanded="false" />
+            <element signature="e#8432#8854#0" expanded="false" />
+            <element signature="e#8896#9192#0" expanded="false" />
+            <element signature="n#!!block;n#addOutcome#0" expanded="false" />
+            <element signature="e#13252#13344#0" expanded="false" />
+            <element signature="n#!!block;n#learnSvmSimPatients#0" expanded="false" />
+            <element signature="e#18914#19006#0" expanded="false" />
+            <element signature="e#19527#19799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

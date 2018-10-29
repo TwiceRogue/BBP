@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="xj+cjt">
+
+    <title>P3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <link rel="stylesheet"  href="/static/css/jquery-ui/jquery-ui-1.7.3.custom.css">
+    <link rel="stylesheet"  href="/static/css/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/bbpcss/dashboard.css">
+    <link rel="stylesheet" href="/static/css/bbpcss/d3-context-menu.css">
+    <link rel="stylesheet" href="/static/css/bbpcss/bbpstyle.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bbpcss/navBar.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    相似病人信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="sim_modal_data">
+                    <div class="form-group">
+                        <label for="user_id" class="col-sm-3 control-label">病人ID</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="user_id" name="user_id" value=""
+                                   placeholder="请输入病历号">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="simBtOnClicked()">
+                    搜索
+                </button><span id="tip"> </span>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="myModal_addOutcomeAttribute" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加属性
+                </h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="addOutcome()">
+                    添加
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="row">
+                <div class="container-fluid panel">
+                    <div id="nar" avbclass="navbar-collapse collapse" >
+                        <ul class="" style="-webkit-padding-start: 0">
+                            <p id="reduc_menu" class="menuchoice" >
+                                <select class="form-control form-control-mine" style="display:none; width:80px">
+                                    <option value="pca">PCA</option>
+                                    <option value="mds">MDS</option>
+                                    <option value="tsne">t-SNE</option>
+                                </select>
+                                <button type="button" id="busubmit1" class="btn btn-default btn-mine" onclick="send_data()" style="width: 25%">数据导入</button>
+                                <button type="button" id="SimPatientBt" class="btn btn-default btn-mine"  data-toggle="modal" data-target="#myModal"style="width: 30%">相似病人</button>
+                                <button type="button" id="searchBt" class="btn btn-default btn-mine"  onclick="searchSimPatients()" style="width: 17%">搜索</button>
+                                <button type="button" id="learnBt" class="btn btn-default btn-mine"  onclick="learnSvmSimPatients()" style="width: 17%">学习</button>
+
+                                <div class="scroll" id="scrollBar">
+			                            <div class="bar"></div>
+			                            <div class="mask"></div>
+		                        </div>
+		                        <div class="demo" id="demo"></div>
+
+                            </p>
+                            <!--<input type="text" id='newStageName'  style='width:100px' value="自定义阶段1">-->
+                            <!--<button type="button" id="newStageBt"  class="btn btn-default btn-mine" onclick="new_stage()" style="width: 80px">创建阶段</button>-->
+                            <!--&lt;!&ndash;<button type="button" id="newStageBt"  class="btn btn-default btn-mine" onclick="new_stage()" style="width: 80px">创建阶段</button>&ndash;&gt;-->
+                            <!--<input type="color" id='colorStage'>-->
+                         <div id="HasFiletered" class="hasBeenSelected panel panel-default"> </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row  panel panel-default attrgraph" id="attrgraph">
+
+            </div>
+
+            <div style="height:10px"></div>
+            <!--<div class="row  panel panel-default attrsum" id="attrsum"> </div>-->
+
+            <div style="height:10px"></div>
+            <div class="row  panel panel-default piegraph" id="piegraph"></div>
+
+        </div>
+        <div class="col-md-10">
+            <div class="pointsRule row" id="stageNavDiv" style="display:none">
+                <ul>
+                    <li class="stageNavLi" style="background-color:#b3e2cd;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">入院</span><i style="background-color:inherit"></i></a></li>
+                    <li class="stageNavLi" style="background-color:#fdcdac;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">早期评估</span><i style="background-color:inherit;"></i></a></li>
+                    <li class="stageNavLi" style="background-color:#cbd5e8;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">术前</span><i style="background-color:inherit;"></i></a></li>
+                    <li class="stageNavLi" style="background-color:#f4cae4;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">术中</span><i style="background-color:inherit;"></i></a></li>
+                    <li class="stageNavLi" style="background-color:#e6f5c9;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">术后</span><i style="background-color:inherit;"></i></a></li>
+                    <li class="stageNavLi" style="background-color:#fff2ae;" onclick='changeStageVisbility(this)'><a style="background-color:inherit"><span class="stageNavSpan">出院</span><i style="background-color:inherit;"></i></a></li>
+                </ul>
+            </div>
+{#            <div class="row panel panel-default scattergraph" id="scattergraph"></div>#}
+            <div class="row panel panel-default spgraph" id="apgraph">
+
+            </div>
+            <div class="row panel page-default"  id="controlplain" style="height: 30px; display: flex;">
+                <textarea rows="1" cols="10"  align="center" placeholder="0-20" id="nownumber">50</textarea>
+                <button type="button" id="busubmit2"  align="center" class="btn btn-default control-btn" onclick="fetch_data_minus()" style="height: 30px">Previous</button>
+                <button type="button" id="busubmit3"  align="center" class="btn btn-default control-btn" onclick="fetch_data_plus()" style="height: 30px">Next</button>
+
+            </div>
+            <div class="row panel panel-default">
+                <!--<div class="col-md-2">-->
+                <div  id="outcomeRow" style="float:left;width:60%">
+                    <div class="s-ctn">
+                        <div class=" outcomeGraphDiv" id="akigraph" ></div>
+                        <div class=" outcomeGraphDiv plusGraphDIv" onclick="showAttrModal()" onmouseover="showBorder(this)" onmouseout="hideBorder(this)" style="width:20%;background:url(/static/css/images/plus.png) no-repeat;background-size:80px 80px;background-position:center ">
+                        <!--<button style="width:120px;height:200px;background:url(/static/css/images/plus.png)">-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--</div>-->
+                <!--<div class="col-md-10">-->
+                    <div class="row panel panel-default" id="spgraph" style="display:none;float:right"></div>
+                <!--</div>-->
+            </div>
+        </div>
+         <div id="MyDiv" style="display:none" class="white_content">
+{#        <div style="text -align: right; cursor: default; height: 40px;">#}
+{#            <span style="font-size: 12px;" onclick="jqueryCloseDiv()">Close</span>#}
+{#        </div>#}
+{#            <textarea placeholder="Rename" style="width:100px"></textarea>>#}
+{#            <button id="testButton">Submit</button>#}
+            <div class="lu-popup2 lu-rename-dialog" x-placement="bottom-start" style="position: absolute; transform: translate3d(5px, 5px, 0px); top: 0px; left: 0px; will-change: transform;"><span style="font-weight: bold" class="lu-popup-title">Rename Column</span>
+            <form onsubmit="return false">
+                <input type="text" value="Chromosome" required="" autofocus="" placeholder="name">
+                <input type="color" value="#C1C1C1" required="" placeholder="color">
+                <textarea rows="5"></textarea><br>
+                <button type="submit" class="ok fa fa-check" title="Apply"></button>
+                <button type="reset" class="cancel fa fa-times" title="Cancel" onclick="jqueryCloseDiv()"></button>
+                <button type="button" class="reset fa fa-undo" title="Reset to default values"></button>
+            </form>
+            </div>
+        </div>
+         <div class="lu-popup2" id="changeVisualization-numerical">
+                <span style="font-weight: bold" class="lu-popup-title">Change Visualization</span>
+                <form onsubmit="return false">
+                    <input type="radio" name="renderertype-numerical" value="rect" checked="" class="change-input"> Bar<br>
+                    <input type="radio" name="renderertype-numerical" value="circle" class="change-input"> Circle<br>
+                    <input type="radio" name="renderertype-numerical" value="string" class="change-input"> String<br>
+                </form>
+            </div>
+        <div class="lu-popup2" id="changeVisualization-cate">
+                <span style="font-weight: bold" class="lu-popup-title">Change Visualization</span>
+                <form onsubmit="return false">
+                    <input type="radio" name="renderertype-cate" value="cate" checked="" class="change-input"> Cate <br>
+                    <input type="radio" name="renderertype-cate" value="color" class="change-input"> Color<br>
+                    <input type="radio" name="renderertype-cate" value="string" class="change-input"> String<br>
+                </form>
+            </div>
+        <div class="lu-popup2" id="filter-pop"  style="display:none;left: 804.656px; top: 134.656px;">
+            <span style="font-weight: bold" class="lu-popup-title"></span>
+            <form onsubmit="return false">
+                <div class="selectionTable" >
+                    <table id = "filter-selectionTable">
+                        <thead>
+                        <tr>
+                            <th class="selectAll"><i class="fa fa-check-square-o"></i></th>
+                            <th>Category</th>
+                        </tr>
+                        </thead>
+                        <tbody id="filter-selectionTablebody">
+                        <tr><td class="checkmark"><i class="fa fa-check-square-o"></i></td><td class="datalabel" style="opacity: 1;">female</td></tr>
+                        <tr><td class="checkmark"><i class="fa fa-check-square-o"></i></td><td class="datalabel" style="opacity: 1;">male</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+{#        <label><input class="lu_filter_missing" type="checkbox">Filter out rows containing missing values</label><br>#}
+                <button type="submit" class="ok fa fa-check" title="ok" onclick="filter_patientList()"></button>
+                <button type="reset" class="cancel fa fa-times" title="cancel" onclick="CloseFilterDiv()"></button>
+                <button type="button" class="reset fa fa-undo" title="reset" onclick="reset_patientList()"></button></form>
+            </div>
+    </div>
+</div>
+<svg class="pattern">
+<pattern class="line-pattern" id="stripes" patternUnits="userSpaceOnUse" width="8" height="8" enable-background="new 0 0 8 8">
+            <path fill="#f7f7f7 " d="m0,0L8,0V8H0V0z" />
+            <path fill="#aaaaaa" d="M7,0L7,0v1h1V0H7z" />
+            <path fill="#aaaaaa" d="M6,1L6,1v1h1V1H6z" />
+            <path fill="#aaaaaa" d="M5,2L5,2v1h1V2H5z" />
+            <path fill="#aaaaaa" d="M4,3L4,3v1h1V3H4z" />
+            <path fill="#aaaaaa" d="M3,4L3,4v1h1V4H3z" />
+            <path fill="#aaaaaa" d="M2,5L2,5v1h1V5H2z" />
+            <path fill="#aaaaaa" d="M1,6L1,6v1h1V6H1z" />
+            <path fill="#aaaaaa" d="M0,7L0,7v1h1V7H0z" />
+            <path fill="#dddddd" d="M7,1L7,1v1h1V1H7z" />
+            <path fill="#dddddd" d="M6,2L6,2v1h1V2H6z" />
+            <path fill="#dddddd" d="M5,3L5,3v1h1V3H5z" />
+            <path fill="#dddddd" d="M4,4L4,4v1h1V4H4z" />
+            <path fill="#dddddd" d="M3,5L3,5v1h1V5H3z" />
+            <path fill="#dddddd" d="M2,6L2,6v1h1V6H2z" />
+            <path fill="#dddddd" d="M1,7L1,7v1h1V7H1z" />
+            <path fill="#dddddd" d="M6,0L6,0v1h1V0H6z" />
+            <path fill="#dddddd" d="M5,1L5,1v1h1V1H5z" />
+            <path fill="#dddddd" d="M4,2L4,2v1h1V2H4z" />
+            <path fill="#dddddd" d="M3,3L3,3v1h1V3H3z" />
+            <path fill="#dddddd" d="M2,4L2,4v1h1V4H2z" />
+            <path fill="#dddddd" d="M1,5L1,5v1h1V5H1z" />
+            <path fill="#dddddd" d="M0,6L0,6v1h1V6H0z" />
+</pattern>
+</svg>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="/static/js/jquery/jquery-2.2.4.js" charset="utf-8"></script>
+<script src="/static/js/jquery/jquery-ui.js" charset="utf-8"></script>
+<script src="/static/js/jquery/jquery.highlighter-1.0.0.js" charset="utf-8"></script>
+<script src="/static/js/jquery/jquery.tipsy.js" charset="utf-8"></script>
+<script src="/static/js/d3/d3.v4.min.js" charset="utf-8"></script>
+<script src="/static/js/d3/d3-tip.js" charset="utf-8"></script>
+<script src="/static/js/bootstrap.min.js" charset="utf-8"></script>
+<script src="/static/js/d3.selectable.js" charset="utf-8"></script>
+<script src="/static/js/graham_scan.js" charset="utf-8"></script>
+<script src="/static/js/bbp/d3-context-menu.js" charset="utf-8"></script>
+
+
+
+<script type="text/javascript" charset="utf8" src="/static/js/DataTables/datatables.js"></script>
+<script src="/static/js/bbp/main.js" charset="utf-8"></script>
+<script src="/static/js/bbp/table.js" charset="utf-8"></script>
+<script src="/static/js/bbp/attr.js" charset="utf-8"></script>
+<script src="/static/js/bbp/pie.js" charset="utf-8"></script>
+<script src="/static/js/bbp/sortArrayWithIndex.js" charset="utf-8"></script>
+<script src="/static/js/bbp/storyline.js" charset="utf-8"></script>
+<script src="/static/js/bbp/scatter.js" charset="utf-8"></script>
+<script src="/static/js/bbp/radarChart_recode.js" charset="utf-8"></script>
+<script src="/static/js/table-dragger.min.js" charset="utf-8"></script>
+<script src="/static/js/jquery.tablednd.1.0.3.min.js" charset="utf-8"></script>
+
+
+<script>
+
+    var scrollBar = document.getElementById("scrollBar");
+	var bar = scrollBar.children[0];
+	var mask = scrollBar.children[1];
+	var demo = document.getElementById("demo");
+	// 拖动原理
+	bar.onmousedown = function(event){
+		var event = event || window.event;
+		var leftVal = event.clientX - this.offsetLeft;
+		// 拖动放到down的里面
+		var that = this;
+		document.onmousemove = function(event){
+			var event = event || window.event;
+			that.style.left = event.clientX - leftVal + "px";
+			// 限制条件
+			var val = parseInt(that.style.left);
+			if(val < 0){
+				that.style.left = 0;
+			}else if(val > 250){
+				that.style.left = "250px";
+			}
+			// 移动的距离为遮罩的宽度
+			mask.style.width = that.style.left;
+			// 显示百分比
+			demo.innerHTML = "相似度:"+ parseFloat(parseFloat(that.style.left) / 250);
+			// 清除拖动 --- 防止鼠标已经弹起时还在拖动
+			window.getSelection ? window.getSelection().removeAllRanges():document.selection.empty();
+		};
+		// 鼠标抬起停止拖动
+		document.onmouseup = function(){
+			document.onmousemove = null;
+		}
+	};
+
+
+
+    $('#myModal_addOutcomeAttribute').on('show.bs.modal', function () {
+        initOutcomeModal(this);
+    });
+
+{#    $(function(){#}
+{#        $('#apgraph').scroll(function () {#}
+{#            //console.log($('#apgraph').scrollTop());#}
+{#            //console.log($('.th_head').offset().top);#}
+{#            var translates = $(".th_head").css("transform");#}
+{##}
+{#            if ($('#apgraph').scrollTop() > $('.th_head').offset().top) {//判断是否滚动到了表头显示不出来的位置#}
+{#                //$('#table_head').show();#}
+{##}
+{#                $('.th_head').attr("transform", "translate(" +  parseFloat(0) + "," + ($('#apgraph').scrollTop()+5) + ")")#}
+{#                <!--$('.th_head').attr("transform", "translate(" +  parseFloat(translates.substring(7).split(',')[4]) + "," + ($('#apgraph').scrollTop()+20) + ")")-->#}
+{#            }#}
+{#            else{#}
+{#                //$('#table_head').hide();#}
+{#                $('.th_head').attr("transform", "translate(" +  parseFloat(0) + "," +5+ ")")#}
+{#                <!--$('.th_head').attr("transform", "translate(" +  parseFloat(translates.substring(7).split(',')[4]) + "," +20+ ")")-->#}
+{#            }#}
+{#    })#}
+{#        if($('.selectedShow:visible').length == 0){#}
+{#            $('#HasFiletered').hide();#}
+{#        }#}
+{#        else{#}
+{#            $('#HasFiletered').show();#}
+{#        }#}
+{#    });#}
+
+
+</script>
+</body>
+</html>
