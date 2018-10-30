@@ -212,8 +212,8 @@ const RadarChart = function RadarChart(parent_selector, data, options,maxValue_A
 		.append("circle")
 		.attr("class", "gridCircle")
 		.attr("r", d => radius / cfg.levels * d)
-		.style("fill", "#000000")
-		.style("stroke", "#000000")
+		.style("fill", "#ffffff")
+		.style("stroke", "#ffffff")
 		.style("fill-opacity", cfg.opacityCircles)
 		.style("filter" , "url(#glow)");
 
@@ -246,7 +246,7 @@ const RadarChart = function RadarChart(parent_selector, data, options,maxValue_A
 		.attr("x2", (d, i) => rScaleArray[i](maxValue_Array[i] *1.1) * cos(angleSlice * i - HALF_PI))
 		.attr("y2", (d, i) => rScaleArray[i](maxValue_Array[i]* 1.1) * sin(angleSlice * i - HALF_PI))
 		.attr("class", "line")
-		.style("stroke", "white")
+		.style("stroke", "#bbbbbb")
 		.style("stroke-width", "2px");
 
 	//Append the labels at each axis
@@ -279,6 +279,41 @@ const RadarChart = function RadarChart(parent_selector, data, options,maxValue_A
 		.data(data)
 		.enter().append("g")
 		.attr("class", "radarWrapper");
+
+	var radialAreaGenerator = d3.radialArea()
+		.curve(d3.curveLinearClosed)
+		.angle(function(d, i) {
+			return angleSlice * i;
+		})
+		.innerRadius(function(d) {
+			return rScaleArray[d.i](d.inner);
+		})
+		.outerRadius(function(d) {
+			return rScaleArray[d.i](d.outer);
+		});
+
+	if(cfg.roundStrokes) {
+		radialAreaGenerator.curve(d3.curveCardinalClosed)
+	}
+
+	var points = new Array(data[0].axes.length)
+		.fill(0)
+		.map((point, i) => ({
+			i: i,
+			inner: data[0].axes[i].value,
+			outer: data[2].axes[i].value
+		}));
+
+	// points.push({
+	// 	i: 0,
+	// 	inner: data[0].axes[0].value,
+	// 	outer: data[2].axes[0].value
+	// });
+
+	blobWrapper.append("path")
+		.attr('d', radialAreaGenerator(points))
+		.style('fill','#bbbbbb')
+		.style('opacity',0.3);
 
 	//Append the backgrounds
 	blobWrapper

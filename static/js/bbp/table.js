@@ -888,7 +888,6 @@ function drawTable_withTable_editByYu20180919(patientDictList_all,patientDictLis
 
             if(col==-1){
 
-
                      svg.append("rect")
                         .attr("class", "rectTable")
                         .attr("width", simiScale(pagePatientsSimilarityLevel[parseInt(patientDictList[index-2]['id'])]))

@@ -1195,7 +1195,7 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
     svm.fit(pairwiseVector, pairwiseLabel,coef_init=weightArray)
 
     print svm.coef_
-    print len(svm.coef_[0])
+    print len(svm.coef_)
 
     return svm.coef_
 
