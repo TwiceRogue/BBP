@@ -9,6 +9,7 @@ from bbpApp.models import UpdatedAki
 from bbpApp.models import Stage
 from sklearn.svm import SVC
 import numpy as np
+from sklearn import linear_model
 
 
 def read_file(fpath):
@@ -1106,7 +1107,7 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
             attributeRangeOrCateNum, similarityRankArray):
     searchPatient = allPatientDictList[patientID]
     stopAttribute = ""
-    #  allPatientDictList_normalized = allPatientDictList  #### 将数据归一化
+    allPatientDictList_normalized = allPatientDictList  #### 将数据归一化
     similarity = []
     pairwiseVector = []
     pairwiseLabel = []
@@ -1122,23 +1123,23 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
                 if (attrIndex == len(columsName) - 1):
                     stopAttribute = ""
 
-    # for attrIndex in range(len(attributeStage)):
-    #     attrName = attributeStage[attrIndex]["attributename"]
-    #     if attrName == stopAttribute:
-    #         break
-    #     if (attributeStage[attrIndex]["category"] == "string"):  #####  string型
-    #         continue
-    #     elif attributeStage[attrIndex]["category"] == "numerical":  #####  数值型
-    #         for aPatient in allPatientDictList_normalized:
-    #             aPatient[attrName] = float(aPatient[attrName] - attributeRangeOrCateNum[attrName]["low"]) / \
-    #                                  float(
-    #                                      attributeRangeOrCateNum[attrName]["high"] - attributeRangeOrCateNum[attrName][
-    #                                          "low"])
-    #     elif attrName == "aki_stage":  #### 有序性类别z
-    #         for aPatient in allPatientDictList_normalized:
-    #             aPatient[attrName] = float(aPatient[attrName]) / 4
+    for attrIndex in range(len(attributeStage)):
+        attrName = attributeStage[attrIndex]["attributename"]
+        if attrName == stopAttribute:
+            break
+        if (attributeStage[attrIndex]["category"] == "string"):  #####  string型
+            continue
+        elif attributeStage[attrIndex]["category"] == "numerical":  #####  数值型
+            for aPatient in allPatientDictList_normalized:
+                aPatient[attrName] = float(aPatient[attrName] - attributeRangeOrCateNum[attrName]["low"]) / \
+                                     float(
+                                         attributeRangeOrCateNum[attrName]["high"] - attributeRangeOrCateNum[attrName][
+                                             "low"])
+        elif attrName == "aki_stage":  #### 有序性类别z
+            for aPatient in allPatientDictList_normalized:
+                aPatient[attrName] = float(aPatient[attrName]) / 4
     # print allPatientDictList
-
+    print len(weightArray)
     for aSPatientIndex in range(len(similarityRankArray) - 1):  #### 病人对的向量化
         S = [0] * len(attributeStage)
         F = {}
@@ -1147,9 +1148,9 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
         Stemp = 0
         stopIndex = -1
 
-        print int(similarityRankArray[aSPatientIndex])
-        searchPatient = allPatientDictList[int(similarityRankArray[aSPatientIndex])]
-        aPatient = allPatientDictList[int(similarityRankArray[aSPatientIndex + 1])]
+        # print int(similarityRankArray[aSPatientIndex])
+        searchPatient = allPatientDictList_normalized[int(similarityRankArray[aSPatientIndex])]
+        aPatient = allPatientDictList_normalized[int(similarityRankArray[aSPatientIndex + 1])]
         for attrIndex in range(len(attributeStage)):
             attrName = attributeStage[attrIndex]["attributename"]
 
@@ -1189,11 +1190,12 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
     print "shujuchangdu" + str(len(allPatientDictList))
     # print pairwiseVector
     # print pairwiseLabel
-
-    svm = SVC(kernel='linear')
-    svm.fit(pairwiseVector, pairwiseLabel)
+    print weightArray
+    svm = linear_model.SGDClassifier()
+    svm.fit(pairwiseVector, pairwiseLabel,coef_init=weightArray)
 
     print svm.coef_
+    print len(svm.coef_[0])
 
     return svm.coef_
 

@@ -882,10 +882,23 @@ function drawTable_withTable_editByYu20180919(patientDictList_all,patientDictLis
             var div_pos = '.d-' + 'r' + index + 'c' + col;
 //            console.log(div_pos);
             var svg = d3.select(div_pos).append('svg').attr('width', tr_width).attr('height', th_height);
+            var simiScale = d3.scaleLinear().range([0, tr_width]).domain([0,1]);
 
 //            console.log(svg);
 
             if(col==-1){
+
+
+                     svg.append("rect")
+                        .attr("class", "rectTable")
+                        .attr("width", simiScale(pagePatientsSimilarityLevel[parseInt(patientDictList[index-2]['id'])]))
+                        .attr("height", th_height)
+                        .attr("rx", 3)
+                        .attr("ry", 3)
+                        .attr("transform", "translate(" + 0 + "," + 3 + ")")
+                        .attr("fill", 'gray')
+                         .style('opacity','0.3');
+
                  svg.append("text")
                     .attr("class", "textTable")
                     .text(index-1)
@@ -2007,20 +2020,22 @@ var fixHelperModified = function(e, tr) {
         console.log('updateIndex');
         var tr_all = $('#table  tr');
 
-        for(var row_s = 2;row_s <tr_all.length; row_s++){
+        // 重新排序Rank
+        // for(var row_s = 2;row_s <tr_all.length; row_s++){
+        //
+        //     var div_pos = tr_all[row_s];
+        //     $(div_pos.childNodes[0]).empty();
+        //     var svg = d3.select(div_pos.childNodes[0]).append('svg').attr('width', tr_width).attr('height', th_height);
+        //     //console.log(svg);
+        //          svg.append("text")
+        //             .attr("class", "textTable")
+        //             .text(row_s-1)
+        //             .attr('text-anchor', 'middle')
+        //             .attr("transform", "translate(" + tr_width / 2 + "," + th_height / 2 + ")");
+        // }
+        //
 
-            var div_pos = tr_all[row_s];
-            $(div_pos.childNodes[0]).empty();
-            var svg = d3.select(div_pos.childNodes[0]).append('svg').attr('width', tr_width).attr('height', th_height);
-            //console.log(svg);
-                 svg.append("text")
-                    .attr("class", "textTable")
-                    .text(row_s-1)
-                    .attr('text-anchor', 'middle')
-                    .attr("transform", "translate(" + tr_width / 2 + "," + th_height / 2 + ")");
-        }
-        // console.log(e);
-        // console.log(ui.item[0]);
+       //
         var row_number =  $(ui.item[0]).attr('id');
         //console.log(tr_all.toArray().indexOf(ui.item[0])); // 调整后的位置
         //console.log(parseInt(row_number.substring(4))); // 一开始的位置

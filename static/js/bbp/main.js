@@ -15,7 +15,7 @@ var attributeCategoricalList = [];
 var attributeNumericalList = [];
 var attributeToStageIndex = {};                              //对象 保存每个属性名对应的阶段index
 var attributeRangeOrCateNum = {};                            // {"attr1name":{categoryNum:x },"attr2name":{low:a,high:b}........}
-
+var pagePatientsSimilarityLevel = [];
 
 function send_data(){
     var reducmenu = d3.select("#reduc_menu select");
@@ -52,6 +52,7 @@ function send_data(){
             pagePatientDictList = data2[4];
             attributeRangeOrCateNum = data2[6];
             attributeNumericalList = [];
+            pagePatientsSimilarityLevel = new Float32Array(allPatientList.length);
             for(var i=0;i<attributeStage.length;i++){
                 if(attributeStage[i].category=="string") attributeStrList.push(attributeStage[i].attributename);            //将属性的类别分类
                 if(attributeStage[i].category=="numerical") attributeNumericalList.push(attributeStage[i].attributename);
@@ -344,7 +345,10 @@ function searchSimPatients(){
     var reducmenu = d3.select("#reduc_menu select");
     var reductype = reducmenu.property("value");
     var weightArray = [];
-    console.log(similarity);
+    console.log(SimPatientBt.innerHTML);
+    if(SimPatientBt.innerHTML.indexOf('度')){
+
+    }
     SimPatientBt.innerHTML=SimPatientBt.innerHTML+'<br>'+'相似度:'+similarity;
 
 //    for(var i=0;i<document.getElementsByClassName("inputW1").length;i++){
@@ -390,14 +394,16 @@ function searchSimPatients(){
             var simiPatientId = [];
             var pagePatientsDicts = [];
             var showSimiPatientLength= 100;
+
             if(data.length<showSimiPatientLength){
                 showSimiPatientLength=data.length;
             }
 
-            for(var i=0;i<showSimiPatientLength;i++)
+            for(var i=0;i<showSimiPatientLength;i++)   // 从1开始就把当前病人去掉
             {
                simiPatientId.push(data[i]["id"]);
                pagePatientsDicts.push(allPatientDictList[data[i]["id"]]);
+               pagePatientsSimilarityLevel[parseInt(data[i]['id'])] = data[i]['similarity_level'];
             }
             pagePatientDictList = pagePatientsDicts;
 //             pagePatientList=pagePatients;
@@ -566,6 +572,13 @@ function learnSvmSimPatients() {
                              },
                 success: function (data) {
                     console.log(data);
+                    var weight_input = $('.inputW1');
+
+                    for(var i =0 ;i < weight_input.length;i++){
+                        weight_input[i].value = data[0][i];
+                    }
+
+
                 }
 
                 }
