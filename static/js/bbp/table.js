@@ -25,6 +25,7 @@ function drawTable_withTable_editByYu20180919(patientDictList_all,patientDictLis
     var th_height = 20, tr_width = 80; // tr_width = width/patientList[0].length;
     var rect_r = 10, circle_r = th_height / 2.2;
 
+
 //    var rScale_age = d3.scaleLinear().range([0, circle_r]).domain([10, 100]);  // 年龄
 //    var rScale_ml = d3.scaleLinear().range([0, circle_r]).domain(d3.extent(patientList, function (d) {
 //        return d[12];

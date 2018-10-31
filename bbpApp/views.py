@@ -232,13 +232,14 @@ def query_test(request):
     # print len(allData);
     return JsonResponse(allData, safe=False)
 
+
 def learn_svm(request):
     print "python start..."
 
     weightArray = request.POST.getlist('weightArray')
     maxStageIndex = str(request.POST['maxStageIndex'])
     patientID = str(request.POST['patientID'])
-    similarityIndex= request.POST.getlist('similarityIndex')
+    similarityIndex = request.POST.getlist('similarityIndex')
     allData = read_aki_inDataBase(0)
     allPatientDictList = allData[4]
     attributeStage = allData[3]
@@ -252,11 +253,15 @@ def learn_svm(request):
     print similarityIndex
     newArray = []
 
+    newSimilarityIndex = []
     for i in weightArray:
         newArray.append(float(i))
+    for j in similarityIndex:
+        if j != u'NaN':
+            newSimilarityIndex.append(j)
 
     svm = rankSvm(allPatientDictList, attributeStage, columsName, newArray, maxStageIndex,
-            int(patientID), attributeRangeOrCateNum, similarityIndex)
+                  int(patientID), attributeRangeOrCateNum, newSimilarityIndex)
     svm = svm.tolist()
     response = JsonResponse(svm, safe=False)
     return response

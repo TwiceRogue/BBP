@@ -1123,7 +1123,7 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
                 if (attrIndex == len(columsName) - 1):
                     stopAttribute = ""
 
-    for attrIndex in range(len(attributeStage)):
+    for attrIndex in range(len(attributeStage)):   # 归一化
         attrName = attributeStage[attrIndex]["attributename"]
         if attrName == stopAttribute:
             break
@@ -1149,6 +1149,7 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
         stopIndex = -1
 
         # print int(similarityRankArray[aSPatientIndex])
+        # print similarityRankArray[aSPatientIndex] + ":" +similarityRankArray[aSPatientIndex + 1]
         searchPatient = allPatientDictList_normalized[int(similarityRankArray[aSPatientIndex])]
         aPatient = allPatientDictList_normalized[int(similarityRankArray[aSPatientIndex + 1])]
         for attrIndex in range(len(attributeStage)):
@@ -1191,11 +1192,12 @@ def rankSvm(allPatientDictList, attributeStage, columsName, weightArray, maxStag
     # print pairwiseVector
     # print pairwiseLabel
     print weightArray
+    print len(weightArray)
     svm = linear_model.SGDClassifier()
     svm.fit(pairwiseVector, pairwiseLabel,coef_init=weightArray)
 
     print svm.coef_
-    print len(svm.coef_)
+    print len(svm.coef_[0])
 
     return svm.coef_
 
